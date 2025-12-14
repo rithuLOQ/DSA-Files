@@ -42,12 +42,12 @@ public class ceiling {
             }
         }
         //returning the index of the element that needs to be added if the target element isn't present
-        for (int i=0;i<arr.length;i++){
-            if (arr[i]<target && arr[i+1]>target){
-                return arr[i+1];
-            }
-        }
-        return arr[start];
+//        for (int i=0;i<arr.length;i++){
+//            if (arr[i]<target && arr[i+1]>target){
+//                return arr[i+1];
+//            }
+//        }
+        return arr[start];// arr[start] is because when the target isn't present in the array then the start will be mid plus 1. so the condition start < end breaks as the end and start points towards the same element in the previous iteration (before start + 1)
     }
     public static void main(String[] args) {
         int[] arr={2,3,4,6,9,14,16,18};
